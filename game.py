@@ -9,7 +9,7 @@ def game():
 
     deck = functions.create_deck()
 
-    player_name = input('Whats Your name?')
+    player_name = input('Whats Your name?\n')
     oPlayer = classes.Player(player_name)
     oDealer = classes.Player("Bob")
 
@@ -35,5 +35,7 @@ def game():
     oPlayer.info()
     oDealer.info()
 
-    
+    if oPlayer.points == 21:
+        functions.check_score(oPlayer, oDealer)
+
     functions.play(oPlayer, oDealer, deck)

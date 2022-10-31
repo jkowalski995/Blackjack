@@ -32,6 +32,9 @@ def check_score(Player, Dealer):
     elif Dealer.points == 21:
         print("Dealer has a blackjack!!!\nDEALER WINS!")
         time.sleep(10)
+    elif Dealer.points > 21:
+        print("Dealer lose the game!")
+        time.sleep(10)
     elif Player.points > Dealer.points:
         print("Player WINS!")
         time.sleep(10)
