@@ -67,3 +67,4 @@ def play(Player, Dealer, deck):
         Dealer.points += card.points
     
     check_score(Player, Dealer)
+    

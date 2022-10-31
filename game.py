@@ -39,3 +39,4 @@ def game():
         functions.check_score(oPlayer, oDealer)
 
     functions.play(oPlayer, oDealer, deck)
+    
