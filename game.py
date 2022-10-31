@@ -37,9 +37,3 @@ def game():
 
     
     functions.play(oPlayer, oDealer, deck)
-
-def main():
-    game()
-
-if __name__ == '__main__':
-    main()
